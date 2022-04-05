@@ -49,7 +49,30 @@ int find_number(vector<int> vet, int number)
     {
         if (number == vet[i])
         {
-            cout << (i + 1) << endl;
+            cout << (i) << endl;
+            return 0;
+        }
+        else
+        {
+            counter++;
+        }
+    }
+    if (counter == vet.size())
+    {
+        cout << -1 << endl;
+    }
+    return 0;
+}
+
+int find_number_from(vector<int> vet, int number, int number2)
+{
+    int counter = 0;
+
+    for (int i = (number2); i < vet.size(); i++)
+    {
+        if (number == vet[i])
+        {
+            cout << (i) << endl;
             return 0;
         }
         else
@@ -66,10 +89,11 @@ int find_number(vector<int> vet, int number)
 
 int main()
 {
-    int value{};
-    cin >> value;
+    int value{}, value2{};
+    cin >> value >> value2;
     vector<int> vet{1, 98, 40, -10, -90, 5, 98, 5, 40, 5};
-    exist_number(vet, value);
-    counter_number(vet, value);
-    find_number(vet, value);
+    // exist_number(vet, value);
+    // counter_number(vet, value);
+    // find_number(vet, value);
+    find_number_from(vet, value, value2);
 }
