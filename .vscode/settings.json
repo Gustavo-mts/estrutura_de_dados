@@ -5,6 +5,9 @@
     "iostream": "cpp",
     "*.tcc": "cpp",
     "vector": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "array": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp"
   }
 }
